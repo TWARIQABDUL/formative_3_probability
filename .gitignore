@@ -1,0 +1,17 @@
+# Virtual Environment
+venv/
+env/
+*.env
+
+# Python Cache & Bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Checkpoints
+.ipynb_checkpoints/
+
+# OS/Editor Files
+.DS_Store
+.vscode/
