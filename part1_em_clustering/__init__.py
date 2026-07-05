@@ -1,7 +1,8 @@
 import os
 import csv
 import kagglehub
-from em_algorithm import GaussianMixture1D
+# from em_algorithm import GaussianMixture1D
+from .em_algorithm import GaussianMixture1D
 
 path = kagglehub.dataset_download("jacopoferretti/parents-heights-vs-children-heights-galton-data")
 
