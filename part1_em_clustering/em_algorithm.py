@@ -60,7 +60,7 @@ class GaussianMixture1D:
         self.mu1 = sum(g * x for g, x in zip(self.gammas, self.data)) / N1
         self.mu2 = sum((1.0 - g) * x for g, x in zip(self.gammas, self.data)) / N2
         
-        # Update Variances (sigma^2)
+        # Update Variances (sigma^2)compute_cost
         self.var1 = sum(g * ((x - self.mu1) ** 2) for g, x in zip(self.gammas, self.data)) / N1
         self.var2 = sum((1.0 - g) * ((x - self.mu2) ** 2) for g, x in zip(self.gammas, self.data)) / N2
 
