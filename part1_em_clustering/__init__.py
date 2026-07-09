@@ -2,7 +2,7 @@ import os
 import csv
 import kagglehub
 # from em_algorithm import GaussianMixture1D
-from .em_algorithm import GaussianMixture1D
+from em_algorithm import GaussianMixture1D
 
 path = kagglehub.dataset_download("jacopoferretti/parents-heights-vs-children-heights-galton-data")
 
@@ -58,4 +58,4 @@ gmm = GaussianMixture1D(
 gmm.fit(max_iterations=25)
 
 # 4. Test the Live Coach Prediction function with a random test height (e.g., 68.5 inches)
-gmm.predict_posterior(test_height=68.5)
+gmm.predict_posterior(test_height=67.4)
